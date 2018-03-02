@@ -1,0 +1,11 @@
+Name:           ubuntu2
+State:          RUNNING
+PID:            795
+IP:             10.0.4.184
+CPU use:        0.70 seconds
+Memory use:     48.22 MiB
+KMem use:       3.40 MiB
+Link:           veth4DIXXN
+ TX bytes:      1.61 KiB
+ RX bytes:      3.62 KiB
+ Total bytes:   5.23 KiB

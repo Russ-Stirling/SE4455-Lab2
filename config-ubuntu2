@@ -1,0 +1,27 @@
+# Template used to create this container: /usr/share/lxc/templates/lxc-download
+# Parameters passed to the template:
+# Template script checksum (SHA-1): 740c51206e35463362b735e68b867876048a8baf
+# For additional config options, please look at lxc.container.conf(5)
+
+# Uncomment the following line to support nesting containers:
+#lxc.include = /usr/share/lxc/config/nesting.conf
+# (Be aware this has security implications)
+
+
+# Distribution configuration
+lxc.include = /usr/share/lxc/config/ubuntu.common.conf
+lxc.include = /usr/share/lxc/config/ubuntu.userns.conf
+lxc.arch = x86_64
+
+# Container specific configuration
+lxc.include = /etc/lxc/default.conf
+lxc.id_map = u 0 296608 65536
+lxc.id_map = g 0 296608 65536
+lxc.rootfs = /home/rstirli2/.local/share/lxc/ubuntu2/rootfs
+lxc.rootfs.backend = dir
+lxc.utsname = ubuntu2
+lxc.network.hwaddr = 00:16:3e:6c:34:81
+lxc.cgroup.cpuset.cpus = 1
+lxc.cgroup.memory.limit_in_bytes = 2G
+
+# Network configuration
